@@ -18,18 +18,26 @@ public class Queue {
         q.enqueue(s_1);
         q.enqueue(s_2);
         q.enqueue(s_3);
-        System.out.println(q.dequeue().name);
-        System.out.println(q.dequeue().name);
-        System.out.println(q.dequeue().name);
-        System.out.println(q.dequeue().name);
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
+        System.out.println(q.dequeue());
     }
 
+    /**
+     * Adds student to the line
+     * @param s Student
+     */
     private void enqueue (Student s){
         queue.add(0, s);
     }
 
+    /**
+     * gets student who is first in line and removes them from the line
+     * @return Student
+     */
     private Student dequeue (){
-        if (queue.size() == 0){
+        if (queue/**/.size() == 0){
             throw new RuntimeException ( "No Students in Queue" );
         }
         else{
