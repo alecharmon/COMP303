@@ -3,14 +3,14 @@ package AssigmentThree;
 /**
  * Created by alec on 12/1/16.
  */
-public class Moveable extends Item {
+public class Movable extends Item {
 
     /**
      * allows for customly named movable items
      * @param name
      * @param world
      */
-    public Moveable(String name, World world){
+    public Movable(String name, World world){
         super(name, world);
     }
 
@@ -18,7 +18,7 @@ public class Moveable extends Item {
      * creates default named movable items
      * @param world
      */
-    public Moveable(World world){
+    public Movable(World world){
         super("M", world);
     }
 

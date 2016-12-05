@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * Created by alec on 11/28/16.
  */
-public class Autonomous extends Moveable {
+public class Autonomous extends Movable {
     private Random randomGenerator;
     private static char[] directions = {'N','W','E','S'};
 

@@ -27,8 +27,8 @@ public class World {
         this.automatas = new Autonomous[agentsQty];
         for(int i =0 ; i < agentsQty; i++){
             Autonomous a = new Autonomous(this);
-            this.add(new Immoveable());
-            this.add(new Moveable(this));
+            this.add(new Immovable());
+            this.add(new Movable(this));
             this.add(a);
             this.automatas[i] = a;
         }
@@ -100,8 +100,8 @@ public class World {
         }
         else{
             //If the item in the space is not movable try to move it
-            if( dest instanceof Moveable){
-                Moveable toMove = (Moveable) dest;
+            if( dest instanceof Movable){
+                Movable toMove = (Movable) dest;
                 Boolean success = toMove.move(direction);
                 if (success){
                     store[newY][newX] = store[y][x];
