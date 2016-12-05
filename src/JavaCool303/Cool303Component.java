@@ -12,11 +12,11 @@ private void setCoordinates(int newX, int newY) {
 }
 
 public int getWidth() {
-  return width.clone();
+  return width;
 }
 
 public int getHeight() {
-  return height.clone();
+  return height;
 }
 
 public int getArea() {
