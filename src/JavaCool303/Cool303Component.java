@@ -23,7 +23,7 @@ public int getArea() {
   return height * width;
 }
 
-private void changeTheme(Cool303Theme newTheme) {
+protected void changeTheme(Cool303Theme newTheme) {
   setTheme = newTheme;
 }
 
