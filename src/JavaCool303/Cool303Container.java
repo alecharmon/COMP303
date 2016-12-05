@@ -6,33 +6,35 @@ import java.awt.*;
 
 public class Cool303Container extends Cool303Component {
   private String label;
-  private ArrayList<Cool303Component> componentList;
+  protected ArrayList<Cool303Component> componentList;
   private int componentCount;
   private int minimumComponentArea;
   private int containerArea;
   public Cool303Container(String aLabel, Cool303Theme aTheme) {
-    this.changeTheme(aTheme);
-    label = aLabel;
-
+    super(aTheme);
+    this.label = aLabel;
     componentList = new ArrayList();
     componentCount = 0;
-    minimumComponentArea = 0;
   }
 
-void addComponent(Cool303Component aComponent) {
+  public void addComponent(Cool303Component aComponent) {
+    componentList.add(aComponent);
+    componentCount++;
+    minimumComponentArea = minimumComponentArea + aComponent.getArea();
 
-  componentList.add(aComponent);
-  componentCount++;
-  minimumComponentArea = minimumComponentArea + aComponent.getArea();
+  }
 
-}
+  public void render(){
+    for( Cool303Component component: componentList){
+    }
+  }
 
-public int getArea() {
+  public int getArea() {
 
-  return minimumComponentArea;
-}
+    return minimumComponentArea;
+  }
 
-private void editLabel(String newLabel) {
+  private void editLabel(String newLabel) {
   label = newLabel;
 }
 
