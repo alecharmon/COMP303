@@ -16,8 +16,7 @@ public class Cool303SampleProgram {
     JButton button4 = new JButton("4");
 
     frame.getContentPane().add(button1, BorderLayout.CENTER);
-    frame.getContentPane().add(button2, BorderLayout.LEFT);
-    frame.getContentPane().add(button3, BorderLayout.RIGHT);
+
 
 
     frame.pack();
