@@ -2,3 +2,5 @@
 COMP303.iml
 out/
 *.class
+.DS_Store
+src/.DS_Store
