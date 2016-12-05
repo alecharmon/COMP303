@@ -8,25 +8,27 @@ import java.awt.*;
  */
 class Cool303ComponetDecorator extends JComponent
 {
-    private Cool303Theme theme;
+    private Cool303Theme theme; //why does ComponentDecorator need a theme? the objects render themselves.
     private Cool303Component component ;
     public Cool303ComponetDecorator(Cool303Theme theme, Cool303Component c )
     {
         super();
         this.theme = theme;
         this.component = c;
-        System.out.println(super.toString());
+        System.out.println("dix");
     }
 
     public Dimension getPreferredSize(){
-        c.get
         return new Dimension(500,100);
     }
     public Dimension getMinimumSize(){
         return new Dimension(500,100);
     }
     public Dimension getMaximumSize(){
-        return new Dimension(500,100);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double width = screenSize.getWidth();
+        double height = screenSize.getHeight();
+        return new Dimension((int) width, (int) height);
     }
 
     @Override

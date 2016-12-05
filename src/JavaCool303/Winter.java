@@ -10,6 +10,7 @@ public class Winter implements Cool303Theme {
     private String fontName = "Comic Sans MS";
     private Color backgroundColor = Color.BLUE;
     private Color buttonColor = Color.GRAY;
+    private Color buttonBorderColor = Color.WHITE;
 
     public Color getFontColor() {
         return fontColor;
@@ -23,7 +24,11 @@ public class Winter implements Cool303Theme {
         return backgroundColor;
     }
 
-    public Color getButtonStyle() {
+    public Color getButtonColor() {
         return buttonColor;
+    }
+
+    public Color getButtonBorderColor() {
+        return buttonBorderColor;
     }
 }

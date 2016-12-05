@@ -8,5 +8,6 @@ public interface Cool303Theme {
     public Color getFontColor();
     public String getFontName();
     public Color getBackgroundColor();
-    public Color getButtonStyle();
+    public Color getButtonColor();
+    public Color getButtonBorderColor();
 }

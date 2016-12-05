@@ -6,10 +6,11 @@ import java.awt.Color;
  */
 
 public class Pastels implements Cool303Theme {
-    private Color fontColor = Color.PINK;
+    private Color fontColor = Color.BLACK;
     private String fontName = "Comic Sans MS";
     private Color backgroundColor = Color.MAGENTA;
-    private Color buttonColor = Color.ORANGE;
+    private Color buttonColor = Color.YELLOW;
+    private Color buttonBorderColor = Color.ORANGE;
 
     public Color getFontColor() {
         return fontColor;
@@ -23,7 +24,11 @@ public class Pastels implements Cool303Theme {
         return backgroundColor;
     }
 
-    public Color getButtonStyle() {
+    public Color getButtonColor() {
         return buttonColor;
+    }
+
+    public Color getButtonBorderColor() {
+        return buttonBorderColor;
     }
 }
